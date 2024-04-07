@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d16bdaa721807943904f9a12d03f1bc, type: 3}
+  m_Name: EMPMine
+  m_EditorClassIdentifier: 
+  minAmount: 1
+  maxAmount: 3
+  rarity: 2
+  canSpawnOnUnswitchableRail: 1
+  canSpawnOnRailTypes: 0000000001000000
+  timeOutAfterSpawn: 5
+  canSpawnAfterDistance: 2
+  spawnablePrefabs:
+  - {fileID: 7707155800857311406, guid: fd4b1cdbf836e0e4b821f6c4817b5095, type: 3}

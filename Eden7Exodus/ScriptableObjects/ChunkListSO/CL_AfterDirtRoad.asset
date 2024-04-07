@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21c0e4bf663b7c43b982b9c5cf79d63, type: 3}
+  m_Name: CL_AfterDirtRoad
+  m_EditorClassIdentifier: 
+  roadChunks:
+  - {fileID: 5792594063087412889, guid: db23cc0719495534f9ef4cde18c18aef, type: 3}
+  - {fileID: 5792594063087412889, guid: 67f627abcb1bf3c4b8b5aef9932f9c51, type: 3}
+  depot: {fileID: 5792594063087412889, guid: b2b196dae72fd3444bcf79e67e2d0994, type: 3}
