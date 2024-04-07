@@ -17,9 +17,16 @@ public class UIPlayerHealthWindow : MonoBehaviour
     private float valueChangeSpeed = 0.5f;
     private float percentShowing = 1f;
 
+    private bool subscribed = false;
+
     private void Start()
     {
-        UIManager.Instance.OnHealthChange += UIManager_OnHealthChange;
+        Subscribe();
+    }
+
+    private void OnDisable()
+    {
+        Subscribe();
     }
 
     private void Update()
@@ -28,6 +35,15 @@ public class UIPlayerHealthWindow : MonoBehaviour
         MoveSliderToTrueValue(minusSlider);
         MoveSliderToTrueValue(plusSlider);
         UpdatePercentage();
+    }
+
+    private void Subscribe()
+    {
+        if (!subscribed)
+        {
+            UIManager.Instance.OnHealthChange += UIManager_OnHealthChange;
+            subscribed = true;
+        }
     }
 
     private void UIManager_OnHealthChange(object sender, float e)
